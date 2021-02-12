@@ -13,7 +13,7 @@
 		<main class="container">
 			<div class="jumbotron">
 				<h1 class="mb-3 text-center">{{ title }}</h1>
-				<h2 class="mb-3 text-center alert alert-success font-underlined"><u>Successfully Submitted Info</u></h2>
+				<h4 class="mb-3 pb-3 text-center alert alert-success font-underlined"><u>Successfully Submitted Info</u></h4>
 				<div class="alert alert-info">
 					<div class="row align-items-center">
 						<p class="col-4 lead">Your Name:</p>
@@ -35,8 +35,10 @@
 						<p class="col-4 lead">Your Comments:</p>
 						<p class="col">{{ comments_from_form }}</p>
 					</div>
-					<div class="row justify-content-end">
-						<a href="/back"><button type="button" class="px-3 py-2 mr-3">Go Back</button></a>
+					<hr class="my-4">
+					<div class="row justify-content-between">
+						<p class="ml-3">{{ robot_from_form }}</p>
+						<a href="/back"><button type="button" class="px-3 py-2 mr-3 btn btn-success">Go Back</button></a>
 					</div>
 				</div>
 			</div>

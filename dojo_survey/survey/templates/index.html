@@ -33,6 +33,7 @@
 							<label for="dojoLocationSelect" class="col-4 col-form-label">Dojo Location: </label>
 							<div class="col">
 								<select class="form-control" id="dojoLocationSelect" name="location">
+									<option>On-Line</option>
 									<option>Arlington, VA</option>
 									<option>Bellevue, WA</option>
 									<option>Boise, ID</option>
@@ -47,23 +48,39 @@
 							</div>
 						</div>
 						<div class="form-group row">
-							<label for="favoriteLanguageSelect" class="col-4 col-form-label">Favorite Language: </label>
-							<div class="col">
-								<select class="form-control" id="favoriteLanguageSelect" name="favorite">
-									<option>C#</option>
-									<option>JAVA</option>
-									<option>MERN</option>
-									<option>PYTHON</option>
-									<option>RUBY</option>
-								</select>
+							<p class="col-12 col-form-label">Favorite Language: </p>
+							<div class="form-check form-check-inline col ml-5">
+								<input type="radio" class="form-check-input" name="favorite" id="favCsharp" value="C#">
+								<label class="form-check-label" for="favCsharp">C#</label>
+							</div>
+							<div class="form-check form-check-inline col">
+								<input type="radio" class="form-check-input" name="favorite" id="favJava" value="JAVA">
+								<label class="form-check-label" for="favJava">JAVA</label>
+							</div>
+							<div class="form-check form-check-inline col">
+								<input type="radio" class="form-check-input" name="favorite" id="favMern" value="MERN">
+								<label class="form-check-label" for="favMern">MERN</label>
+							</div>
+							<div class="form-check form-check-inline col">
+								<input type="radio" class="form-check-input" name="favorite" id="favPython" value="PYTHON">
+								<label class="form-check-label" for="favPython">PYTHON</label>
+							</div>
+							<div class="form-check form-check-inline col">
+								<input type="radio" class="form-check-input" name="favorite" id="favRuby" value="RUBY">
+								<label class="form-check-label" for="favRuby">RUBY</label>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="commentsTextarea">Comments: </label>
 							<textarea class="form-control" id="commentsTextarea" rows="3" name="comments"></textarea>
 						</div>
+						<hr class="my-4">
 						<div class="row justify-content-end">
-							<button type="submit" class="px-3 py-2 mr-3">Submit</button>
+							<div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" id="notRobotCheck" name="robot">
+								<label class="form-check-label mr-3" for="notRobotCheck">I am not a robot</label>
+							</div>
+							<button type="submit" class="px-3 py-2 mr-3 btn btn-primary">Submit</button>
 						</div>
 					</form>
 				</div>
